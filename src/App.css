@@ -1,42 +1,93 @@
-#root {
-  max-width: 1280px;
+header {
+  margin-bottom: 40px;
+  color: #070077;
+}
+
+.formInput {
+  width: 320px;
+  height: auto;
+  font-weight: bold;
+}
+
+input {
+  margin: 8px 0 8px; 
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid #b4b4b4;
+  height: 40px;
+  width: 100%;
+}
+
+input:focus {
+  border-bottom-color: #000;
+  outline: none;
+}
+
+.calculaBtn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(113deg, rgba(7,0,119,1) 0%, rgba(10,10,171,1) 50%, rgba(29,23,212,1) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 320px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.calculaBtn:hover {
+  background-color: #000;
+  
+}
+
+.aviso {
+  padding-top: 8px;
+  color: red;
+  font-weight: bold;
+}
+
+.result-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.slider-container {
+  width: 80%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding-top: 40px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ff0000 0%, #ffcc00 10%, #00ff00 25%, #ffcc00 40%, #ff0000 100%);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card {
-  padding: 2em;
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.read-the-docs {
-  color: #888;
-}
+
